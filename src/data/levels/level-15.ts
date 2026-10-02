@@ -1,0 +1,61 @@
+import type { LevelDefinition } from './types'
+
+/**
+ * LEVEL 15 - Heart of the Ouroboros
+ * Densidade em curva: sobe, pica em ~70%, respira antes do fim.
+ */
+export const level15: LevelDefinition = {
+  id: 15,
+  act: 3,
+  name: 'Heart of the Ouroboros',
+  biome: 'heart',
+  duration: 210,
+  seed: 778703,
+  terrain: {
+    baseHalf: 10.2,
+    amp: 1.0,
+    freq: 0.011,
+    drift: 0.9,
+    driftFreq: 0.006,
+    detail: 0.25,
+    pylons: 4,
+  },
+  boss: 'ouroboros',
+  waves: [
+    { at: 4.0, kind: 'runner', count: 3, formation: 'arc', x: 0.29, spacing: 2.97 },
+    { at: 11.8, kind: 'lance', count: 5, formation: 'arc', x: -0.49, spacing: 2.06 },
+    { at: 20.2, kind: 'splitter', count: 3, formation: 'line', x: -0.15, spacing: 2.28 },
+    { at: 27.3, kind: 'barge', count: 2, formation: 'wall', x: 0.53, spacing: 2.37 },
+    { at: 31.9, kind: 'runner', count: 3, formation: 'arc', x: -0.27, spacing: 2.96 },
+    { at: 37.5, kind: 'lance', count: 5, formation: 'arc', x: 0.24, spacing: 2.7 },
+    { at: 42.6, kind: 'splitter', count: 2, formation: 'line', x: 0.06, spacing: 2.92 },
+    { at: 46.0, kind: 'barge', count: 2, formation: 'wall', x: -0.46, spacing: 2.76 },
+    { at: 49.3, kind: 'runner', count: 3, formation: 'arc', x: 0.48, spacing: 2.53 },
+    { at: 52.6, kind: 'lance', count: 4, formation: 'arc', x: 0.71, spacing: 2.6 },
+    { at: 57.2, kind: 'splitter', count: 3, formation: 'line', x: -0.62, spacing: 2.01 },
+    { at: 61.7, kind: 'barge', count: 2, formation: 'wall', x: -0.35, spacing: 2.41 },
+    { at: 65.8, kind: 'runner', count: 2, formation: 'arc', x: 0.25, spacing: 1.93 },
+    { at: 69.0, kind: 'lance', count: 5, formation: 'arc', x: -0.36, spacing: 3.08 },
+    { at: 72.4, kind: 'splitter', count: 2, formation: 'line', x: 0.29, spacing: 1.94 },
+    { at: 76.7, kind: 'barge', count: 2, formation: 'wall', x: 0.23, spacing: 2.54 },
+    { at: 80.8, kind: 'runner', count: 3, formation: 'arc', x: 0.49, spacing: 2.59 },
+    { at: 85.8, kind: 'lance', count: 4, formation: 'arc', x: 0.29, spacing: 2.44 },
+  ],
+  pickups: [
+    { at: 6.0, kind: 'energy', x: -0.56 },
+    { at: 13.0, kind: 'energy', x: 0.62 },
+    { at: 20.1, kind: 'energy', x: -0.13 },
+    { at: 26.7, kind: 'energy', x: -0.25 },
+    { at: 34.1, kind: 'energy', x: 0.42 },
+    { at: 37.8, kind: 'aegis', x: 0.47 },
+    { at: 42.7, kind: 'energy', x: 0.57 },
+    { at: 50.2, kind: 'energy', x: -0.15 },
+    { at: 58.4, kind: 'energy', x: 0.17 },
+    { at: 65.4, kind: 'energy', x: -0.61 },
+    { at: 71.4, kind: 'pulse', x: -0.43 },
+    { at: 74.6, kind: 'energy', x: 0.58 },
+    { at: 81.3, kind: 'energy', x: 0.01 },
+    { at: 105.0, kind: 'spread', x: -0.07 },
+    { at: 138.6, kind: 'lance', x: 0.37 },
+  ],
+}

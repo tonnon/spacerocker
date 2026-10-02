@@ -1,0 +1,61 @@
+import type { LevelDefinition } from './types'
+
+/**
+ * LEVEL 04 - Derelict Station
+ * Densidade em curva: sobe, pica em ~70%, respira antes do fim.
+ */
+export const level04: LevelDefinition = {
+  id: 4,
+  act: 1,
+  name: 'Derelict Station',
+  biome: 'ruins',
+  duration: 110,
+  seed: 691594,
+  terrain: {
+    baseHalf: 7.9,
+    amp: 2.3,
+    freq: 0.026,
+    drift: 2.4,
+    driftFreq: 0.014,
+    detail: 0.55,
+    pylons: 9,
+  },
+  waves: [
+    { at: 4.0, kind: 'swarmer', count: 12, formation: 'swarm', x: 0.13, spacing: 2.91 },
+    { at: 12.4, kind: 'swarmer', count: 12, formation: 'swarm', x: 0.46, spacing: 2.13 },
+    { at: 22.1, kind: 'scrap', count: 3, formation: 'line', x: 0.41, spacing: 2.45 },
+    { at: 30.2, kind: 'interceptor', count: 3, formation: 'v', x: 0.07, spacing: 2.09 },
+    { at: 37.1, kind: 'turret', count: 2, formation: 'sides', x: -0.57, spacing: 1.95 },
+    { at: 42.1, kind: 'swarmer', count: 11, formation: 'swarm', x: -0.25, spacing: 2.01 },
+    { at: 48.4, kind: 'swarmer', count: 10, formation: 'swarm', x: 0.12, spacing: 2.08 },
+    { at: 53.0, kind: 'scrap', count: 2, formation: 'line', x: 0.49, spacing: 2.82 },
+    { at: 56.7, kind: 'interceptor', count: 4, formation: 'v', x: -0.06, spacing: 2.0 },
+    { at: 60.3, kind: 'turret', count: 2, formation: 'sides', x: 0.68, spacing: 2.95 },
+    { at: 63.5, kind: 'swarmer', count: 11, formation: 'swarm', x: 0.2, spacing: 3.06 },
+    { at: 68.6, kind: 'swarmer', count: 12, formation: 'swarm', x: 0.02, spacing: 2.86 },
+    { at: 71.9, kind: 'scrap', count: 2, formation: 'line', x: -0.37, spacing: 2.75 },
+    { at: 75.1, kind: 'interceptor', count: 5, formation: 'v', x: -0.71, spacing: 2.19 },
+    { at: 78.8, kind: 'turret', count: 1, formation: 'sides', x: -0.46, spacing: 2.76 },
+    { at: 82.7, kind: 'swarmer', count: 9, formation: 'swarm', x: 0.19, spacing: 2.59 },
+    { at: 87.0, kind: 'swarmer', count: 11, formation: 'swarm', x: 0.48, spacing: 2.49 },
+    { at: 91.5, kind: 'scrap', count: 3, formation: 'line', x: -0.56, spacing: 2.02 },
+    { at: 95.5, kind: 'interceptor', count: 4, formation: 'v', x: 0.37, spacing: 3.06 },
+    { at: 99.6, kind: 'turret', count: 2, formation: 'sides', x: 0.37, spacing: 1.95 },
+  ],
+  pickups: [
+    { at: 6.0, kind: 'energy', x: 0.26 },
+    { at: 13.9, kind: 'energy', x: 0.3 },
+    { at: 21.1, kind: 'energy', x: 0.68 },
+    { at: 29.1, kind: 'energy', x: -0.16 },
+    { at: 33.0, kind: 'spread', x: -0.43 },
+    { at: 36.6, kind: 'energy', x: 0.29 },
+    { at: 44.0, kind: 'energy', x: 0.57 },
+    { at: 53.0, kind: 'energy', x: 0.48 },
+    { at: 62.4, kind: 'energy', x: 0.06 },
+    { at: 70.7, kind: 'energy', x: 0.59 },
+    { at: 78.2, kind: 'energy', x: -0.48 },
+    { at: 85.0, kind: 'energy', x: 0.04 },
+    { at: 94.0, kind: 'energy', x: 0.45 },
+    { at: 101.6, kind: 'energy', x: 0.31 },
+  ],
+}

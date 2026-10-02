@@ -1,0 +1,60 @@
+import type { LevelDefinition } from './types'
+
+/**
+ * LEVEL 02 - Orbital Canyon
+ * Densidade em curva: sobe, pica em ~70%, respira antes do fim.
+ */
+export const level02: LevelDefinition = {
+  id: 2,
+  act: 1,
+  name: 'Orbital Canyon',
+  biome: 'canyon',
+  duration: 100,
+  seed: 675756,
+  terrain: {
+    baseHalf: 9.6,
+    amp: 1.7,
+    freq: 0.016,
+    drift: 1.6,
+    driftFreq: 0.009,
+    detail: 0.35,
+    pylons: 5,
+  },
+  waves: [
+    { at: 4.0, kind: 'scrap', count: 2, formation: 'line', x: -0.42, spacing: 2.68 },
+    { at: 12.0, kind: 'interceptor', count: 4, formation: 'v', x: 0.11, spacing: 3.02 },
+    { at: 18.0, kind: 'turret', count: 2, formation: 'sides', x: 0.24, spacing: 2.48 },
+    { at: 25.4, kind: 'turret', count: 2, formation: 'sides', x: -0.28, spacing: 1.93 },
+    { at: 32.0, kind: 'scrap', count: 4, formation: 'line', x: -0.24, spacing: 2.2 },
+    { at: 36.2, kind: 'interceptor', count: 4, formation: 'v', x: 0.31, spacing: 2.43 },
+    { at: 42.0, kind: 'turret', count: 2, formation: 'sides', x: 0.26, spacing: 2.7 },
+    { at: 45.7, kind: 'turret', count: 2, formation: 'sides', x: -0.38, spacing: 1.96 },
+    { at: 51.3, kind: 'scrap', count: 4, formation: 'line', x: 0.1, spacing: 3.0 },
+    { at: 56.3, kind: 'interceptor', count: 4, formation: 'v', x: -0.64, spacing: 2.57 },
+    { at: 59.4, kind: 'turret', count: 2, formation: 'sides', x: 0.61, spacing: 1.95 },
+    { at: 63.6, kind: 'turret', count: 2, formation: 'sides', x: 0.48, spacing: 2.29 },
+    { at: 66.6, kind: 'scrap', count: 3, formation: 'line', x: 0.56, spacing: 2.57 },
+    { at: 69.3, kind: 'interceptor', count: 4, formation: 'v', x: 0.54, spacing: 2.35 },
+    { at: 72.0, kind: 'turret', count: 1, formation: 'sides', x: 0.19, spacing: 2.47 },
+    { at: 74.7, kind: 'turret', count: 2, formation: 'sides', x: 0.7, spacing: 2.93 },
+    { at: 79.2, kind: 'scrap', count: 3, formation: 'line', x: 0.21, spacing: 2.58 },
+    { at: 82.5, kind: 'interceptor', count: 5, formation: 'v', x: 0.47, spacing: 2.71 },
+    { at: 85.5, kind: 'turret', count: 2, formation: 'sides', x: 0.26, spacing: 3.07 },
+    { at: 89.8, kind: 'turret', count: 2, formation: 'sides', x: 0.42, spacing: 2.54 },
+  ],
+  pickups: [
+    { at: 6.0, kind: 'energy', x: 0.36 },
+    { at: 13.0, kind: 'energy', x: -0.51 },
+    { at: 21.5, kind: 'energy', x: 0.45 },
+    { at: 29.6, kind: 'energy', x: -0.35 },
+    { at: 38.3, kind: 'energy', x: -0.57 },
+    { at: 45.4, kind: 'energy', x: 0.7 },
+    { at: 52.6, kind: 'energy', x: 0.31 },
+    { at: 59.3, kind: 'energy', x: -0.16 },
+    { at: 60.0, kind: 'pulse', x: -0.41 },
+    { at: 68.5, kind: 'energy', x: 0.46 },
+    { at: 75.7, kind: 'energy', x: 0.11 },
+    { at: 83.9, kind: 'energy', x: 0.28 },
+    { at: 91.0, kind: 'energy', x: -0.42 },
+  ],
+}

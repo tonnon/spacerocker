@@ -1,0 +1,3156 @@
+{
+ "meta": {
+  "app": "spacerocker-spritegen",
+  "version": "1.0",
+  "image": "act1_albedo.png",
+  "emissive": "act1_emissive.png",
+  "size": {
+   "w": 2048,
+   "h": 1024
+  },
+  "scale": "1",
+  "padding": 2,
+  "extrude": 1,
+  "act": 1,
+  "entities": {
+   "scrap": {
+    "frameSize": {
+     "w": 128,
+     "h": 128
+    },
+    "hitRadius": 0.34,
+    "gun": [
+     0.03,
+     0.72
+    ],
+    "animations": {
+     "idle": {
+      "frames": [
+       "scrap_idle_0",
+       "scrap_idle_1",
+       "scrap_idle_2",
+       "scrap_idle_3"
+      ],
+      "fps": 8,
+      "loop": true
+     },
+     "bank_left": {
+      "frames": [
+       "scrap_bank_left_0",
+       "scrap_bank_left_1",
+       "scrap_bank_left_2"
+      ],
+      "fps": 14,
+      "loop": false
+     },
+     "bank_right": {
+      "frames": [
+       "scrap_bank_right_0",
+       "scrap_bank_right_1",
+       "scrap_bank_right_2"
+      ],
+      "fps": 14,
+      "loop": false
+     },
+     "charge": {
+      "frames": [
+       "scrap_charge_0",
+       "scrap_charge_1",
+       "scrap_charge_2",
+       "scrap_charge_3",
+       "scrap_charge_4",
+       "scrap_charge_5"
+      ],
+      "fps": 10,
+      "loop": false
+     },
+     "fire": {
+      "frames": [
+       "scrap_fire_0",
+       "scrap_fire_1"
+      ],
+      "fps": 16,
+      "loop": false
+     },
+     "hit": {
+      "frames": [
+       "scrap_hit_0"
+      ],
+      "fps": 1,
+      "loop": false
+     },
+     "death": {
+      "frames": [
+       "scrap_death_0",
+       "scrap_death_1",
+       "scrap_death_2",
+       "scrap_death_3",
+       "scrap_death_4",
+       "scrap_death_5",
+       "scrap_death_6",
+       "scrap_death_7"
+      ],
+      "fps": 12,
+      "loop": false
+     }
+    }
+   },
+   "interceptor": {
+    "frameSize": {
+     "w": 128,
+     "h": 128
+    },
+    "hitRadius": 0.26,
+    "gun": [
+     0.0,
+     0.9
+    ],
+    "animations": {
+     "idle": {
+      "frames": [
+       "interceptor_idle_0",
+       "interceptor_idle_1",
+       "interceptor_idle_2",
+       "interceptor_idle_3"
+      ],
+      "fps": 8,
+      "loop": true
+     },
+     "bank_left": {
+      "frames": [
+       "interceptor_bank_left_0",
+       "interceptor_bank_left_1",
+       "interceptor_bank_left_2"
+      ],
+      "fps": 14,
+      "loop": false
+     },
+     "bank_right": {
+      "frames": [
+       "interceptor_bank_right_0",
+       "interceptor_bank_right_1",
+       "interceptor_bank_right_2"
+      ],
+      "fps": 14,
+      "loop": false
+     },
+     "charge": {
+      "frames": [
+       "interceptor_charge_0",
+       "interceptor_charge_1",
+       "interceptor_charge_2",
+       "interceptor_charge_3",
+       "interceptor_charge_4",
+       "interceptor_charge_5"
+      ],
+      "fps": 10,
+      "loop": false
+     },
+     "fire": {
+      "frames": [
+       "interceptor_fire_0",
+       "interceptor_fire_1"
+      ],
+      "fps": 16,
+      "loop": false
+     },
+     "hit": {
+      "frames": [
+       "interceptor_hit_0"
+      ],
+      "fps": 1,
+      "loop": false
+     },
+     "death": {
+      "frames": [
+       "interceptor_death_0",
+       "interceptor_death_1",
+       "interceptor_death_2",
+       "interceptor_death_3",
+       "interceptor_death_4",
+       "interceptor_death_5",
+       "interceptor_death_6",
+       "interceptor_death_7"
+      ],
+      "fps": 12,
+      "loop": false
+     }
+    }
+   },
+   "turret": {
+    "frameSize": {
+     "w": 128,
+     "h": 128
+    },
+    "hitRadius": 0.34,
+    "gun": [
+     0.0,
+     0.5
+    ],
+    "animations": {
+     "idle": {
+      "frames": [
+       "turret_idle_0",
+       "turret_idle_1",
+       "turret_idle_2",
+       "turret_idle_3"
+      ],
+      "fps": 8,
+      "loop": true
+     },
+     "bank_left": {
+      "frames": [
+       "turret_bank_left_0",
+       "turret_bank_left_1",
+       "turret_bank_left_2"
+      ],
+      "fps": 14,
+      "loop": false
+     },
+     "bank_right": {
+      "frames": [
+       "turret_bank_right_0",
+       "turret_bank_right_1",
+       "turret_bank_right_2"
+      ],
+      "fps": 14,
+      "loop": false
+     },
+     "charge": {
+      "frames": [
+       "turret_charge_0",
+       "turret_charge_1",
+       "turret_charge_2",
+       "turret_charge_3",
+       "turret_charge_4",
+       "turret_charge_5"
+      ],
+      "fps": 10,
+      "loop": false
+     },
+     "fire": {
+      "frames": [
+       "turret_fire_0",
+       "turret_fire_1"
+      ],
+      "fps": 16,
+      "loop": false
+     },
+     "hit": {
+      "frames": [
+       "turret_hit_0"
+      ],
+      "fps": 1,
+      "loop": false
+     },
+     "death": {
+      "frames": [
+       "turret_death_0",
+       "turret_death_1",
+       "turret_death_2",
+       "turret_death_3",
+       "turret_death_4",
+       "turret_death_5",
+       "turret_death_6",
+       "turret_death_7"
+      ],
+      "fps": 12,
+      "loop": false
+     }
+    }
+   },
+   "swarmer": {
+    "frameSize": {
+     "w": 64,
+     "h": 64
+    },
+    "hitRadius": 0.26,
+    "gun": [
+     0.0,
+     0.8
+    ],
+    "animations": {
+     "idle": {
+      "frames": [
+       "swarmer_idle_0",
+       "swarmer_idle_1",
+       "swarmer_idle_2",
+       "swarmer_idle_3"
+      ],
+      "fps": 8,
+      "loop": true
+     },
+     "bank_left": {
+      "frames": [
+       "swarmer_bank_left_0",
+       "swarmer_bank_left_1",
+       "swarmer_bank_left_2"
+      ],
+      "fps": 14,
+      "loop": false
+     },
+     "bank_right": {
+      "frames": [
+       "swarmer_bank_right_0",
+       "swarmer_bank_right_1",
+       "swarmer_bank_right_2"
+      ],
+      "fps": 14,
+      "loop": false
+     },
+     "charge": {
+      "frames": [
+       "swarmer_charge_0",
+       "swarmer_charge_1",
+       "swarmer_charge_2",
+       "swarmer_charge_3",
+       "swarmer_charge_4",
+       "swarmer_charge_5"
+      ],
+      "fps": 10,
+      "loop": false
+     },
+     "fire": {
+      "frames": [
+       "swarmer_fire_0",
+       "swarmer_fire_1"
+      ],
+      "fps": 16,
+      "loop": false
+     },
+     "hit": {
+      "frames": [
+       "swarmer_hit_0"
+      ],
+      "fps": 1,
+      "loop": false
+     },
+     "death": {
+      "frames": [
+       "swarmer_death_0",
+       "swarmer_death_1",
+       "swarmer_death_2",
+       "swarmer_death_3",
+       "swarmer_death_4",
+       "swarmer_death_5",
+       "swarmer_death_6",
+       "swarmer_death_7"
+      ],
+      "fps": 12,
+      "loop": false
+     }
+    }
+   }
+  }
+ },
+ "frames": {
+  "interceptor_bank_left_0": {
+   "frame": {
+    "x": 2,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "bank_left"
+  },
+  "interceptor_bank_left_1": {
+   "frame": {
+    "x": 132,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "bank_left"
+  },
+  "interceptor_bank_left_2": {
+   "frame": {
+    "x": 262,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "bank_left"
+  },
+  "interceptor_bank_right_0": {
+   "frame": {
+    "x": 392,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "bank_right"
+  },
+  "interceptor_bank_right_1": {
+   "frame": {
+    "x": 522,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "bank_right"
+  },
+  "interceptor_bank_right_2": {
+   "frame": {
+    "x": 652,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "bank_right"
+  },
+  "interceptor_charge_0": {
+   "frame": {
+    "x": 782,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "charge"
+  },
+  "interceptor_charge_1": {
+   "frame": {
+    "x": 912,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "charge"
+  },
+  "interceptor_charge_2": {
+   "frame": {
+    "x": 1042,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "charge"
+  },
+  "interceptor_charge_3": {
+   "frame": {
+    "x": 1172,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "charge"
+  },
+  "interceptor_charge_4": {
+   "frame": {
+    "x": 1302,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "charge"
+  },
+  "interceptor_charge_5": {
+   "frame": {
+    "x": 1432,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "charge"
+  },
+  "interceptor_death_0": {
+   "frame": {
+    "x": 1562,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "death"
+  },
+  "interceptor_death_1": {
+   "frame": {
+    "x": 1692,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "death"
+  },
+  "interceptor_death_2": {
+   "frame": {
+    "x": 1822,
+    "y": 2,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "death"
+  },
+  "interceptor_death_3": {
+   "frame": {
+    "x": 2,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "death"
+  },
+  "interceptor_death_4": {
+   "frame": {
+    "x": 132,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "death"
+  },
+  "interceptor_death_5": {
+   "frame": {
+    "x": 262,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "death"
+  },
+  "interceptor_death_6": {
+   "frame": {
+    "x": 392,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "death"
+  },
+  "interceptor_death_7": {
+   "frame": {
+    "x": 522,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "death"
+  },
+  "interceptor_fire_0": {
+   "frame": {
+    "x": 652,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "fire"
+  },
+  "interceptor_fire_1": {
+   "frame": {
+    "x": 782,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "fire"
+  },
+  "interceptor_hit_0": {
+   "frame": {
+    "x": 912,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "hit"
+  },
+  "interceptor_idle_0": {
+   "frame": {
+    "x": 1042,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "idle"
+  },
+  "interceptor_idle_1": {
+   "frame": {
+    "x": 1172,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "idle"
+  },
+  "interceptor_idle_2": {
+   "frame": {
+    "x": 1302,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "idle"
+  },
+  "interceptor_idle_3": {
+   "frame": {
+    "x": 1432,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "interceptor",
+   "state": "idle"
+  },
+  "scrap_bank_left_0": {
+   "frame": {
+    "x": 1562,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "bank_left"
+  },
+  "scrap_bank_left_1": {
+   "frame": {
+    "x": 1692,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "bank_left"
+  },
+  "scrap_bank_left_2": {
+   "frame": {
+    "x": 1822,
+    "y": 132,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "bank_left"
+  },
+  "scrap_bank_right_0": {
+   "frame": {
+    "x": 2,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "bank_right"
+  },
+  "scrap_bank_right_1": {
+   "frame": {
+    "x": 132,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "bank_right"
+  },
+  "scrap_bank_right_2": {
+   "frame": {
+    "x": 262,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "bank_right"
+  },
+  "scrap_charge_0": {
+   "frame": {
+    "x": 392,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "charge"
+  },
+  "scrap_charge_1": {
+   "frame": {
+    "x": 522,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "charge"
+  },
+  "scrap_charge_2": {
+   "frame": {
+    "x": 652,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "charge"
+  },
+  "scrap_charge_3": {
+   "frame": {
+    "x": 782,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "charge"
+  },
+  "scrap_charge_4": {
+   "frame": {
+    "x": 912,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "charge"
+  },
+  "scrap_charge_5": {
+   "frame": {
+    "x": 1042,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "charge"
+  },
+  "scrap_death_0": {
+   "frame": {
+    "x": 1172,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "death"
+  },
+  "scrap_death_1": {
+   "frame": {
+    "x": 1302,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "death"
+  },
+  "scrap_death_2": {
+   "frame": {
+    "x": 1432,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "death"
+  },
+  "scrap_death_3": {
+   "frame": {
+    "x": 1562,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "death"
+  },
+  "scrap_death_4": {
+   "frame": {
+    "x": 1692,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "death"
+  },
+  "scrap_death_5": {
+   "frame": {
+    "x": 1822,
+    "y": 262,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "death"
+  },
+  "scrap_death_6": {
+   "frame": {
+    "x": 2,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "death"
+  },
+  "scrap_death_7": {
+   "frame": {
+    "x": 132,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "death"
+  },
+  "scrap_fire_0": {
+   "frame": {
+    "x": 262,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "fire"
+  },
+  "scrap_fire_1": {
+   "frame": {
+    "x": 392,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "fire"
+  },
+  "scrap_hit_0": {
+   "frame": {
+    "x": 522,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "hit"
+  },
+  "scrap_idle_0": {
+   "frame": {
+    "x": 652,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "idle"
+  },
+  "scrap_idle_1": {
+   "frame": {
+    "x": 782,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "idle"
+  },
+  "scrap_idle_2": {
+   "frame": {
+    "x": 912,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "idle"
+  },
+  "scrap_idle_3": {
+   "frame": {
+    "x": 1042,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "scrap",
+   "state": "idle"
+  },
+  "swarmer_bank_left_0": {
+   "frame": {
+    "x": 782,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "bank_left"
+  },
+  "swarmer_bank_left_1": {
+   "frame": {
+    "x": 848,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "bank_left"
+  },
+  "swarmer_bank_left_2": {
+   "frame": {
+    "x": 914,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "bank_left"
+  },
+  "swarmer_bank_right_0": {
+   "frame": {
+    "x": 980,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "bank_right"
+  },
+  "swarmer_bank_right_1": {
+   "frame": {
+    "x": 1046,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "bank_right"
+  },
+  "swarmer_bank_right_2": {
+   "frame": {
+    "x": 1112,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "bank_right"
+  },
+  "swarmer_charge_0": {
+   "frame": {
+    "x": 1178,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "charge"
+  },
+  "swarmer_charge_1": {
+   "frame": {
+    "x": 1244,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "charge"
+  },
+  "swarmer_charge_2": {
+   "frame": {
+    "x": 1310,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "charge"
+  },
+  "swarmer_charge_3": {
+   "frame": {
+    "x": 1376,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "charge"
+  },
+  "swarmer_charge_4": {
+   "frame": {
+    "x": 1442,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "charge"
+  },
+  "swarmer_charge_5": {
+   "frame": {
+    "x": 1508,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "charge"
+  },
+  "swarmer_death_0": {
+   "frame": {
+    "x": 1574,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "death"
+  },
+  "swarmer_death_1": {
+   "frame": {
+    "x": 1640,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "death"
+  },
+  "swarmer_death_2": {
+   "frame": {
+    "x": 1706,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "death"
+  },
+  "swarmer_death_3": {
+   "frame": {
+    "x": 1772,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "death"
+  },
+  "swarmer_death_4": {
+   "frame": {
+    "x": 1838,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "death"
+  },
+  "swarmer_death_5": {
+   "frame": {
+    "x": 1904,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "death"
+  },
+  "swarmer_death_6": {
+   "frame": {
+    "x": 1970,
+    "y": 652,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "death"
+  },
+  "swarmer_death_7": {
+   "frame": {
+    "x": 2,
+    "y": 782,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "death"
+  },
+  "swarmer_fire_0": {
+   "frame": {
+    "x": 68,
+    "y": 782,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "fire"
+  },
+  "swarmer_fire_1": {
+   "frame": {
+    "x": 134,
+    "y": 782,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "fire"
+  },
+  "swarmer_hit_0": {
+   "frame": {
+    "x": 200,
+    "y": 782,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "hit"
+  },
+  "swarmer_idle_0": {
+   "frame": {
+    "x": 266,
+    "y": 782,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "idle"
+  },
+  "swarmer_idle_1": {
+   "frame": {
+    "x": 332,
+    "y": 782,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "idle"
+  },
+  "swarmer_idle_2": {
+   "frame": {
+    "x": 398,
+    "y": 782,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "idle"
+  },
+  "swarmer_idle_3": {
+   "frame": {
+    "x": 464,
+    "y": 782,
+    "w": 64,
+    "h": 64
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "swarmer",
+   "state": "idle"
+  },
+  "turret_bank_left_0": {
+   "frame": {
+    "x": 1172,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "bank_left"
+  },
+  "turret_bank_left_1": {
+   "frame": {
+    "x": 1302,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "bank_left"
+  },
+  "turret_bank_left_2": {
+   "frame": {
+    "x": 1432,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "bank_left"
+  },
+  "turret_bank_right_0": {
+   "frame": {
+    "x": 1562,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "bank_right"
+  },
+  "turret_bank_right_1": {
+   "frame": {
+    "x": 1692,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "bank_right"
+  },
+  "turret_bank_right_2": {
+   "frame": {
+    "x": 1822,
+    "y": 392,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "bank_right"
+  },
+  "turret_charge_0": {
+   "frame": {
+    "x": 2,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "charge"
+  },
+  "turret_charge_1": {
+   "frame": {
+    "x": 132,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "charge"
+  },
+  "turret_charge_2": {
+   "frame": {
+    "x": 262,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "charge"
+  },
+  "turret_charge_3": {
+   "frame": {
+    "x": 392,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "charge"
+  },
+  "turret_charge_4": {
+   "frame": {
+    "x": 522,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "charge"
+  },
+  "turret_charge_5": {
+   "frame": {
+    "x": 652,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "charge"
+  },
+  "turret_death_0": {
+   "frame": {
+    "x": 782,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "death"
+  },
+  "turret_death_1": {
+   "frame": {
+    "x": 912,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "death"
+  },
+  "turret_death_2": {
+   "frame": {
+    "x": 1042,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "death"
+  },
+  "turret_death_3": {
+   "frame": {
+    "x": 1172,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "death"
+  },
+  "turret_death_4": {
+   "frame": {
+    "x": 1302,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "death"
+  },
+  "turret_death_5": {
+   "frame": {
+    "x": 1432,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "death"
+  },
+  "turret_death_6": {
+   "frame": {
+    "x": 1562,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "death"
+  },
+  "turret_death_7": {
+   "frame": {
+    "x": 1692,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "death"
+  },
+  "turret_fire_0": {
+   "frame": {
+    "x": 1822,
+    "y": 522,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "fire"
+  },
+  "turret_fire_1": {
+   "frame": {
+    "x": 2,
+    "y": 652,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "fire"
+  },
+  "turret_hit_0": {
+   "frame": {
+    "x": 132,
+    "y": 652,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "hit"
+  },
+  "turret_idle_0": {
+   "frame": {
+    "x": 262,
+    "y": 652,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "idle"
+  },
+  "turret_idle_1": {
+   "frame": {
+    "x": 392,
+    "y": 652,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "idle"
+  },
+  "turret_idle_2": {
+   "frame": {
+    "x": 522,
+    "y": 652,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "idle"
+  },
+  "turret_idle_3": {
+   "frame": {
+    "x": 652,
+    "y": 652,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret",
+   "state": "idle"
+  }
+ }
+}

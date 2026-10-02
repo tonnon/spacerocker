@@ -1,0 +1,63 @@
+import type { LevelDefinition } from './types'
+
+/**
+ * LEVEL 06 - Neon Reef
+ * Densidade em curva: sobe, pica em ~70%, respira antes do fim.
+ */
+export const level06: LevelDefinition = {
+  id: 6,
+  act: 2,
+  name: 'Neon Reef',
+  biome: 'reef',
+  duration: 115,
+  seed: 707432,
+  terrain: {
+    baseHalf: 8.8,
+    amp: 2.0,
+    freq: 0.021,
+    drift: 2.1,
+    driftFreq: 0.012,
+    detail: 0.6,
+    pylons: 8,
+  },
+  waves: [
+    { at: 4.0, kind: 'bulwark', count: 3, formation: 'wall', x: 0.68, spacing: 1.94 },
+    { at: 12.8, kind: 'interceptor', count: 4, formation: 'v', x: -0.63, spacing: 2.45 },
+    { at: 21.9, kind: 'scrap', count: 4, formation: 'line', x: 0.57, spacing: 2.42 },
+    { at: 27.3, kind: 'swarmer', count: 10, formation: 'swarm', x: 0.41, spacing: 2.25 },
+    { at: 35.1, kind: 'bulwark', count: 2, formation: 'wall', x: 0.53, spacing: 2.9 },
+    { at: 41.4, kind: 'interceptor', count: 5, formation: 'v', x: 0.62, spacing: 2.79 },
+    { at: 45.7, kind: 'scrap', count: 3, formation: 'line', x: -0.02, spacing: 2.67 },
+    { at: 51.6, kind: 'swarmer', count: 11, formation: 'swarm', x: -0.07, spacing: 2.48 },
+    { at: 56.1, kind: 'bulwark', count: 3, formation: 'wall', x: -0.23, spacing: 2.21 },
+    { at: 60.9, kind: 'interceptor', count: 5, formation: 'v', x: 0.55, spacing: 2.12 },
+    { at: 64.3, kind: 'scrap', count: 4, formation: 'line', x: -0.21, spacing: 2.98 },
+    { at: 68.0, kind: 'swarmer', count: 9, formation: 'swarm', x: -0.44, spacing: 2.23 },
+    { at: 71.7, kind: 'bulwark', count: 2, formation: 'wall', x: 0.13, spacing: 2.92 },
+    { at: 75.6, kind: 'interceptor', count: 3, formation: 'v', x: -0.52, spacing: 2.02 },
+    { at: 78.4, kind: 'scrap', count: 3, formation: 'line', x: 0.33, spacing: 3.04 },
+    { at: 81.6, kind: 'swarmer', count: 12, formation: 'swarm', x: -0.33, spacing: 2.26 },
+    { at: 85.5, kind: 'bulwark', count: 3, formation: 'wall', x: -0.7, spacing: 2.4 },
+    { at: 88.8, kind: 'interceptor', count: 5, formation: 'v', x: -0.14, spacing: 2.54 },
+    { at: 93.2, kind: 'scrap', count: 4, formation: 'line', x: 0.47, spacing: 3.06 },
+    { at: 96.5, kind: 'swarmer', count: 9, formation: 'swarm', x: 0.31, spacing: 2.56 },
+    { at: 101.7, kind: 'bulwark', count: 3, formation: 'wall', x: 0.41, spacing: 2.25 },
+  ],
+  pickups: [
+    { at: 6.0, kind: 'energy', x: -0.49 },
+    { at: 13.7, kind: 'energy', x: 0.02 },
+    { at: 23.0, kind: 'energy', x: -0.26 },
+    { at: 30.8, kind: 'energy', x: 0.44 },
+    { at: 38.5, kind: 'energy', x: 0.65 },
+    { at: 40.2, kind: 'spread', x: -0.26 },
+    { at: 47.6, kind: 'energy', x: 0.29 },
+    { at: 55.2, kind: 'energy', x: -0.67 },
+    { at: 62.9, kind: 'energy', x: 0.33 },
+    { at: 71.3, kind: 'energy', x: -0.19 },
+    { at: 79.3, kind: 'energy', x: -0.08 },
+    { at: 85.8, kind: 'energy', x: -0.26 },
+    { at: 93.5, kind: 'energy', x: -0.09 },
+    { at: 100.8, kind: 'energy', x: -0.33 },
+    { at: 110.2, kind: 'energy', x: -0.08 },
+  ],
+}

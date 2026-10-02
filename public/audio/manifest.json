@@ -1,0 +1,6 @@
+{
+  "_comment": "Optional stem override. Drop act1_base.ogg etc. beside this file and fill an entry in to replace the synthesised score for that act; leave an entry null and the MusicDirector synthesises it with Tone.js. The game is designed to run with this folder otherwise empty.",
+  "act1": null,
+  "act2": null,
+  "act3": null
+}

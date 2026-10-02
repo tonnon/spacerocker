@@ -1,0 +1,6345 @@
+{
+ "meta": {
+  "app": "spacerocker-spritegen",
+  "version": "1.0",
+  "image": "boss_basilisk_albedo.png",
+  "emissive": "boss_basilisk_emissive.png",
+  "size": {
+   "w": 2048,
+   "h": 4096
+  },
+  "scale": "1",
+  "padding": 2,
+  "extrude": 1,
+  "act": 2,
+  "boss": {
+   "id": "basilisk",
+   "name": "BASILISK",
+   "level": 10,
+   "scale": 1.8,
+   "screenWidthFraction": 0.78,
+   "phases": [
+    {
+     "from": 1.0,
+     "to": 0.7,
+     "entry": "side",
+     "turrets": "track"
+    },
+    {
+     "from": 0.7,
+     "to": 0.4,
+     "coil": true,
+     "wall": "rotating-gap"
+    },
+    {
+     "from": 0.4,
+     "to": 0.15,
+     "thrusters": "burning",
+     "charge": "diagonal"
+    },
+    {
+     "from": 0.15,
+     "to": 0.0,
+     "segments": "independent",
+     "core": "beam"
+    }
+   ],
+   "parts": {
+    "head": {
+     "frameSize": {
+      "w": 224,
+      "h": 224
+     },
+     "hp": 600,
+     "anchor": [
+      0.0,
+      0.46
+     ],
+     "animations": {
+      "idle": {
+       "frames": [
+        "head_idle_0",
+        "head_idle_1",
+        "head_idle_2",
+        "head_idle_3"
+       ],
+       "fps": 8,
+       "loop": true
+      },
+      "charge": {
+       "frames": [
+        "head_charge_0",
+        "head_charge_1",
+        "head_charge_2",
+        "head_charge_3",
+        "head_charge_4",
+        "head_charge_5"
+       ],
+       "fps": 10,
+       "loop": false
+      },
+      "fire": {
+       "frames": [
+        "head_fire_0",
+        "head_fire_1"
+       ],
+       "fps": 16,
+       "loop": false
+      },
+      "damaged": {
+       "frames": [
+        "head_damaged_0",
+        "head_damaged_1"
+       ],
+       "fps": 6,
+       "loop": true
+      },
+      "destroyed": {
+       "frames": [
+        "head_destroyed_0",
+        "head_destroyed_1",
+        "head_destroyed_2",
+        "head_destroyed_3",
+        "head_destroyed_4",
+        "head_destroyed_5"
+       ],
+       "fps": 12,
+       "loop": false
+      }
+     }
+    },
+    "seg_a": {
+     "frameSize": {
+      "w": 208,
+      "h": 176
+     },
+     "hp": 0,
+     "anchor": [
+      0.0,
+      0.14
+     ],
+     "animations": {
+      "idle": {
+       "frames": [
+        "seg_a_idle_0",
+        "seg_a_idle_1",
+        "seg_a_idle_2",
+        "seg_a_idle_3"
+       ],
+       "fps": 8,
+       "loop": true
+      },
+      "damaged": {
+       "frames": [
+        "seg_a_damaged_0",
+        "seg_a_damaged_1"
+       ],
+       "fps": 6,
+       "loop": true
+      },
+      "destroyed": {
+       "frames": [
+        "seg_a_destroyed_0",
+        "seg_a_destroyed_1",
+        "seg_a_destroyed_2",
+        "seg_a_destroyed_3",
+        "seg_a_destroyed_4",
+        "seg_a_destroyed_5"
+       ],
+       "fps": 12,
+       "loop": false
+      }
+     }
+    },
+    "seg_b": {
+     "frameSize": {
+      "w": 200,
+      "h": 172
+     },
+     "hp": 0,
+     "anchor": [
+      0.0,
+      -0.14
+     ],
+     "animations": {
+      "idle": {
+       "frames": [
+        "seg_b_idle_0",
+        "seg_b_idle_1",
+        "seg_b_idle_2",
+        "seg_b_idle_3"
+       ],
+       "fps": 8,
+       "loop": true
+      },
+      "damaged": {
+       "frames": [
+        "seg_b_damaged_0",
+        "seg_b_damaged_1"
+       ],
+       "fps": 6,
+       "loop": true
+      },
+      "destroyed": {
+       "frames": [
+        "seg_b_destroyed_0",
+        "seg_b_destroyed_1",
+        "seg_b_destroyed_2",
+        "seg_b_destroyed_3",
+        "seg_b_destroyed_4",
+        "seg_b_destroyed_5"
+       ],
+       "fps": 12,
+       "loop": false
+      }
+     }
+    },
+    "seg_c": {
+     "frameSize": {
+      "w": 192,
+      "h": 168
+     },
+     "hp": 0,
+     "anchor": [
+      0.0,
+      -0.42
+     ],
+     "animations": {
+      "idle": {
+       "frames": [
+        "seg_c_idle_0",
+        "seg_c_idle_1",
+        "seg_c_idle_2",
+        "seg_c_idle_3"
+       ],
+       "fps": 8,
+       "loop": true
+      },
+      "damaged": {
+       "frames": [
+        "seg_c_damaged_0",
+        "seg_c_damaged_1"
+       ],
+       "fps": 6,
+       "loop": true
+      },
+      "destroyed": {
+       "frames": [
+        "seg_c_destroyed_0",
+        "seg_c_destroyed_1",
+        "seg_c_destroyed_2",
+        "seg_c_destroyed_3",
+        "seg_c_destroyed_4",
+        "seg_c_destroyed_5"
+       ],
+       "fps": 12,
+       "loop": false
+      }
+     }
+    },
+    "seg_d": {
+     "frameSize": {
+      "w": 184,
+      "h": 164
+     },
+     "hp": 0,
+     "anchor": [
+      0.0,
+      -0.7
+     ],
+     "animations": {
+      "idle": {
+       "frames": [
+        "seg_d_idle_0",
+        "seg_d_idle_1",
+        "seg_d_idle_2",
+        "seg_d_idle_3"
+       ],
+       "fps": 8,
+       "loop": true
+      },
+      "damaged": {
+       "frames": [
+        "seg_d_damaged_0",
+        "seg_d_damaged_1"
+       ],
+       "fps": 6,
+       "loop": true
+      },
+      "destroyed": {
+       "frames": [
+        "seg_d_destroyed_0",
+        "seg_d_destroyed_1",
+        "seg_d_destroyed_2",
+        "seg_d_destroyed_3",
+        "seg_d_destroyed_4",
+        "seg_d_destroyed_5"
+       ],
+       "fps": 12,
+       "loop": false
+      }
+     }
+    },
+    "turret_a": {
+     "frameSize": {
+      "w": 128,
+      "h": 128
+     },
+     "hp": 500,
+     "anchor": [
+      0.0,
+      0.16
+     ],
+     "animations": {
+      "idle": {
+       "frames": [
+        "turret_a_idle_0",
+        "turret_a_idle_1",
+        "turret_a_idle_2",
+        "turret_a_idle_3"
+       ],
+       "fps": 8,
+       "loop": true
+      },
+      "charge": {
+       "frames": [
+        "turret_a_charge_0",
+        "turret_a_charge_1",
+        "turret_a_charge_2",
+        "turret_a_charge_3",
+        "turret_a_charge_4",
+        "turret_a_charge_5"
+       ],
+       "fps": 10,
+       "loop": false
+      },
+      "fire": {
+       "frames": [
+        "turret_a_fire_0",
+        "turret_a_fire_1"
+       ],
+       "fps": 16,
+       "loop": false
+      },
+      "damaged": {
+       "frames": [
+        "turret_a_damaged_0",
+        "turret_a_damaged_1"
+       ],
+       "fps": 6,
+       "loop": true
+      },
+      "destroyed": {
+       "frames": [
+        "turret_a_destroyed_0",
+        "turret_a_destroyed_1",
+        "turret_a_destroyed_2",
+        "turret_a_destroyed_3",
+        "turret_a_destroyed_4",
+        "turret_a_destroyed_5"
+       ],
+       "fps": 12,
+       "loop": false
+      }
+     }
+    },
+    "turret_b": {
+     "frameSize": {
+      "w": 128,
+      "h": 128
+     },
+     "hp": 500,
+     "anchor": [
+      0.0,
+      -0.12
+     ],
+     "animations": {
+      "idle": {
+       "frames": [
+        "turret_b_idle_0",
+        "turret_b_idle_1",
+        "turret_b_idle_2",
+        "turret_b_idle_3"
+       ],
+       "fps": 8,
+       "loop": true
+      },
+      "charge": {
+       "frames": [
+        "turret_b_charge_0",
+        "turret_b_charge_1",
+        "turret_b_charge_2",
+        "turret_b_charge_3",
+        "turret_b_charge_4",
+        "turret_b_charge_5"
+       ],
+       "fps": 10,
+       "loop": false
+      },
+      "fire": {
+       "frames": [
+        "turret_b_fire_0",
+        "turret_b_fire_1"
+       ],
+       "fps": 16,
+       "loop": false
+      },
+      "damaged": {
+       "frames": [
+        "turret_b_damaged_0",
+        "turret_b_damaged_1"
+       ],
+       "fps": 6,
+       "loop": true
+      },
+      "destroyed": {
+       "frames": [
+        "turret_b_destroyed_0",
+        "turret_b_destroyed_1",
+        "turret_b_destroyed_2",
+        "turret_b_destroyed_3",
+        "turret_b_destroyed_4",
+        "turret_b_destroyed_5"
+       ],
+       "fps": 12,
+       "loop": false
+      }
+     }
+    },
+    "turret_c": {
+     "frameSize": {
+      "w": 128,
+      "h": 128
+     },
+     "hp": 500,
+     "anchor": [
+      0.0,
+      -0.4
+     ],
+     "animations": {
+      "idle": {
+       "frames": [
+        "turret_c_idle_0",
+        "turret_c_idle_1",
+        "turret_c_idle_2",
+        "turret_c_idle_3"
+       ],
+       "fps": 8,
+       "loop": true
+      },
+      "charge": {
+       "frames": [
+        "turret_c_charge_0",
+        "turret_c_charge_1",
+        "turret_c_charge_2",
+        "turret_c_charge_3",
+        "turret_c_charge_4",
+        "turret_c_charge_5"
+       ],
+       "fps": 10,
+       "loop": false
+      },
+      "fire": {
+       "frames": [
+        "turret_c_fire_0",
+        "turret_c_fire_1"
+       ],
+       "fps": 16,
+       "loop": false
+      },
+      "damaged": {
+       "frames": [
+        "turret_c_damaged_0",
+        "turret_c_damaged_1"
+       ],
+       "fps": 6,
+       "loop": true
+      },
+      "destroyed": {
+       "frames": [
+        "turret_c_destroyed_0",
+        "turret_c_destroyed_1",
+        "turret_c_destroyed_2",
+        "turret_c_destroyed_3",
+        "turret_c_destroyed_4",
+        "turret_c_destroyed_5"
+       ],
+       "fps": 12,
+       "loop": false
+      }
+     }
+    },
+    "turret_d": {
+     "frameSize": {
+      "w": 128,
+      "h": 128
+     },
+     "hp": 500,
+     "anchor": [
+      0.0,
+      -0.68
+     ],
+     "animations": {
+      "idle": {
+       "frames": [
+        "turret_d_idle_0",
+        "turret_d_idle_1",
+        "turret_d_idle_2",
+        "turret_d_idle_3"
+       ],
+       "fps": 8,
+       "loop": true
+      },
+      "charge": {
+       "frames": [
+        "turret_d_charge_0",
+        "turret_d_charge_1",
+        "turret_d_charge_2",
+        "turret_d_charge_3",
+        "turret_d_charge_4",
+        "turret_d_charge_5"
+       ],
+       "fps": 10,
+       "loop": false
+      },
+      "fire": {
+       "frames": [
+        "turret_d_fire_0",
+        "turret_d_fire_1"
+       ],
+       "fps": 16,
+       "loop": false
+      },
+      "damaged": {
+       "frames": [
+        "turret_d_damaged_0",
+        "turret_d_damaged_1"
+       ],
+       "fps": 6,
+       "loop": true
+      },
+      "destroyed": {
+       "frames": [
+        "turret_d_destroyed_0",
+        "turret_d_destroyed_1",
+        "turret_d_destroyed_2",
+        "turret_d_destroyed_3",
+        "turret_d_destroyed_4",
+        "turret_d_destroyed_5"
+       ],
+       "fps": 12,
+       "loop": false
+      }
+     }
+    },
+    "thruster_l": {
+     "frameSize": {
+      "w": 160,
+      "h": 160
+     },
+     "hp": 700,
+     "anchor": [
+      -0.34,
+      -0.92
+     ],
+     "animations": {
+      "idle": {
+       "frames": [
+        "thruster_l_idle_0",
+        "thruster_l_idle_1",
+        "thruster_l_idle_2",
+        "thruster_l_idle_3"
+       ],
+       "fps": 8,
+       "loop": true
+      },
+      "charge": {
+       "frames": [
+        "thruster_l_charge_0",
+        "thruster_l_charge_1",
+        "thruster_l_charge_2",
+        "thruster_l_charge_3",
+        "thruster_l_charge_4",
+        "thruster_l_charge_5"
+       ],
+       "fps": 10,
+       "loop": false
+      },
+      "fire": {
+       "frames": [
+        "thruster_l_fire_0",
+        "thruster_l_fire_1"
+       ],
+       "fps": 16,
+       "loop": false
+      },
+      "damaged": {
+       "frames": [
+        "thruster_l_damaged_0",
+        "thruster_l_damaged_1"
+       ],
+       "fps": 6,
+       "loop": true
+      },
+      "destroyed": {
+       "frames": [
+        "thruster_l_destroyed_0",
+        "thruster_l_destroyed_1",
+        "thruster_l_destroyed_2",
+        "thruster_l_destroyed_3",
+        "thruster_l_destroyed_4",
+        "thruster_l_destroyed_5"
+       ],
+       "fps": 12,
+       "loop": false
+      }
+     }
+    },
+    "thruster_r": {
+     "frameSize": {
+      "w": 160,
+      "h": 160
+     },
+     "hp": 700,
+     "anchor": [
+      0.34,
+      -0.92
+     ],
+     "animations": {
+      "idle": {
+       "frames": [
+        "thruster_r_idle_0",
+        "thruster_r_idle_1",
+        "thruster_r_idle_2",
+        "thruster_r_idle_3"
+       ],
+       "fps": 8,
+       "loop": true
+      },
+      "charge": {
+       "frames": [
+        "thruster_r_charge_0",
+        "thruster_r_charge_1",
+        "thruster_r_charge_2",
+        "thruster_r_charge_3",
+        "thruster_r_charge_4",
+        "thruster_r_charge_5"
+       ],
+       "fps": 10,
+       "loop": false
+      },
+      "fire": {
+       "frames": [
+        "thruster_r_fire_0",
+        "thruster_r_fire_1"
+       ],
+       "fps": 16,
+       "loop": false
+      },
+      "damaged": {
+       "frames": [
+        "thruster_r_damaged_0",
+        "thruster_r_damaged_1"
+       ],
+       "fps": 6,
+       "loop": true
+      },
+      "destroyed": {
+       "frames": [
+        "thruster_r_destroyed_0",
+        "thruster_r_destroyed_1",
+        "thruster_r_destroyed_2",
+        "thruster_r_destroyed_3",
+        "thruster_r_destroyed_4",
+        "thruster_r_destroyed_5"
+       ],
+       "fps": 12,
+       "loop": false
+      }
+     }
+    },
+    "core": {
+     "frameSize": {
+      "w": 176,
+      "h": 176
+     },
+     "hp": 1800,
+     "anchor": [
+      0.0,
+      -0.42
+     ],
+     "animations": {
+      "idle": {
+       "frames": [
+        "core_idle_0",
+        "core_idle_1",
+        "core_idle_2",
+        "core_idle_3"
+       ],
+       "fps": 8,
+       "loop": true
+      },
+      "charge": {
+       "frames": [
+        "core_charge_0",
+        "core_charge_1",
+        "core_charge_2",
+        "core_charge_3",
+        "core_charge_4",
+        "core_charge_5"
+       ],
+       "fps": 10,
+       "loop": false
+      },
+      "fire": {
+       "frames": [
+        "core_fire_0",
+        "core_fire_1"
+       ],
+       "fps": 16,
+       "loop": false
+      },
+      "damaged": {
+       "frames": [
+        "core_damaged_0",
+        "core_damaged_1"
+       ],
+       "fps": 6,
+       "loop": true
+      },
+      "destroyed": {
+       "frames": [
+        "core_destroyed_0",
+        "core_destroyed_1",
+        "core_destroyed_2",
+        "core_destroyed_3",
+        "core_destroyed_4",
+        "core_destroyed_5"
+       ],
+       "fps": 12,
+       "loop": false
+      }
+     }
+    }
+   }
+  }
+ },
+ "frames": {
+  "core_charge_0": {
+   "frame": {
+    "x": 1052,
+    "y": 680,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "charge",
+   "partId": "core"
+  },
+  "core_charge_1": {
+   "frame": {
+    "x": 1230,
+    "y": 680,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "charge",
+   "partId": "core"
+  },
+  "core_charge_2": {
+   "frame": {
+    "x": 1408,
+    "y": 680,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "charge",
+   "partId": "core"
+  },
+  "core_charge_3": {
+   "frame": {
+    "x": 1586,
+    "y": 680,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "charge",
+   "partId": "core"
+  },
+  "core_charge_4": {
+   "frame": {
+    "x": 1764,
+    "y": 680,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "charge",
+   "partId": "core"
+  },
+  "core_charge_5": {
+   "frame": {
+    "x": 2,
+    "y": 858,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "charge",
+   "partId": "core"
+  },
+  "core_damaged_0": {
+   "frame": {
+    "x": 180,
+    "y": 858,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "damaged",
+   "partId": "core"
+  },
+  "core_damaged_1": {
+   "frame": {
+    "x": 358,
+    "y": 858,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "damaged",
+   "partId": "core"
+  },
+  "core_destroyed_0": {
+   "frame": {
+    "x": 536,
+    "y": 858,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "destroyed",
+   "partId": "core"
+  },
+  "core_destroyed_1": {
+   "frame": {
+    "x": 714,
+    "y": 858,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "destroyed",
+   "partId": "core"
+  },
+  "core_destroyed_2": {
+   "frame": {
+    "x": 892,
+    "y": 858,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "destroyed",
+   "partId": "core"
+  },
+  "core_destroyed_3": {
+   "frame": {
+    "x": 1070,
+    "y": 858,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "destroyed",
+   "partId": "core"
+  },
+  "core_destroyed_4": {
+   "frame": {
+    "x": 1248,
+    "y": 858,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "destroyed",
+   "partId": "core"
+  },
+  "core_destroyed_5": {
+   "frame": {
+    "x": 1426,
+    "y": 858,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "destroyed",
+   "partId": "core"
+  },
+  "core_fire_0": {
+   "frame": {
+    "x": 1604,
+    "y": 858,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "fire",
+   "partId": "core"
+  },
+  "core_fire_1": {
+   "frame": {
+    "x": 1782,
+    "y": 858,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "fire",
+   "partId": "core"
+  },
+  "core_idle_0": {
+   "frame": {
+    "x": 2,
+    "y": 1036,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "idle",
+   "partId": "core"
+  },
+  "core_idle_1": {
+   "frame": {
+    "x": 180,
+    "y": 1036,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "idle",
+   "partId": "core"
+  },
+  "core_idle_2": {
+   "frame": {
+    "x": 358,
+    "y": 1036,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "idle",
+   "partId": "core"
+  },
+  "core_idle_3": {
+   "frame": {
+    "x": 536,
+    "y": 1036,
+    "w": 176,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 176,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 176,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "core",
+   "state": "idle",
+   "partId": "core"
+  },
+  "head_charge_0": {
+   "frame": {
+    "x": 2,
+    "y": 2,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "charge",
+   "partId": "head"
+  },
+  "head_charge_1": {
+   "frame": {
+    "x": 228,
+    "y": 2,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "charge",
+   "partId": "head"
+  },
+  "head_charge_2": {
+   "frame": {
+    "x": 454,
+    "y": 2,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "charge",
+   "partId": "head"
+  },
+  "head_charge_3": {
+   "frame": {
+    "x": 680,
+    "y": 2,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "charge",
+   "partId": "head"
+  },
+  "head_charge_4": {
+   "frame": {
+    "x": 906,
+    "y": 2,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "charge",
+   "partId": "head"
+  },
+  "head_charge_5": {
+   "frame": {
+    "x": 1132,
+    "y": 2,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "charge",
+   "partId": "head"
+  },
+  "head_damaged_0": {
+   "frame": {
+    "x": 1358,
+    "y": 2,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "damaged",
+   "partId": "head"
+  },
+  "head_damaged_1": {
+   "frame": {
+    "x": 1584,
+    "y": 2,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "damaged",
+   "partId": "head"
+  },
+  "head_destroyed_0": {
+   "frame": {
+    "x": 1810,
+    "y": 2,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "destroyed",
+   "partId": "head"
+  },
+  "head_destroyed_1": {
+   "frame": {
+    "x": 2,
+    "y": 228,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "destroyed",
+   "partId": "head"
+  },
+  "head_destroyed_2": {
+   "frame": {
+    "x": 228,
+    "y": 228,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "destroyed",
+   "partId": "head"
+  },
+  "head_destroyed_3": {
+   "frame": {
+    "x": 454,
+    "y": 228,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "destroyed",
+   "partId": "head"
+  },
+  "head_destroyed_4": {
+   "frame": {
+    "x": 680,
+    "y": 228,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "destroyed",
+   "partId": "head"
+  },
+  "head_destroyed_5": {
+   "frame": {
+    "x": 906,
+    "y": 228,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "destroyed",
+   "partId": "head"
+  },
+  "head_fire_0": {
+   "frame": {
+    "x": 1132,
+    "y": 228,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "fire",
+   "partId": "head"
+  },
+  "head_fire_1": {
+   "frame": {
+    "x": 1358,
+    "y": 228,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "fire",
+   "partId": "head"
+  },
+  "head_idle_0": {
+   "frame": {
+    "x": 1584,
+    "y": 228,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "idle",
+   "partId": "head"
+  },
+  "head_idle_1": {
+   "frame": {
+    "x": 1810,
+    "y": 228,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "idle",
+   "partId": "head"
+  },
+  "head_idle_2": {
+   "frame": {
+    "x": 2,
+    "y": 454,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "idle",
+   "partId": "head"
+  },
+  "head_idle_3": {
+   "frame": {
+    "x": 228,
+    "y": 454,
+    "w": 224,
+    "h": 224
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 224,
+    "h": 224
+   },
+   "sourceSize": {
+    "w": 224,
+    "h": 224
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "head",
+   "state": "idle",
+   "partId": "head"
+  },
+  "seg_a_damaged_0": {
+   "frame": {
+    "x": 454,
+    "y": 454,
+    "w": 208,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 208,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 208,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_a",
+   "state": "damaged",
+   "partId": "seg_a"
+  },
+  "seg_a_damaged_1": {
+   "frame": {
+    "x": 664,
+    "y": 454,
+    "w": 208,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 208,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 208,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_a",
+   "state": "damaged",
+   "partId": "seg_a"
+  },
+  "seg_a_destroyed_0": {
+   "frame": {
+    "x": 874,
+    "y": 454,
+    "w": 208,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 208,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 208,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_a",
+   "state": "destroyed",
+   "partId": "seg_a"
+  },
+  "seg_a_destroyed_1": {
+   "frame": {
+    "x": 1084,
+    "y": 454,
+    "w": 208,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 208,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 208,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_a",
+   "state": "destroyed",
+   "partId": "seg_a"
+  },
+  "seg_a_destroyed_2": {
+   "frame": {
+    "x": 1294,
+    "y": 454,
+    "w": 208,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 208,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 208,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_a",
+   "state": "destroyed",
+   "partId": "seg_a"
+  },
+  "seg_a_destroyed_3": {
+   "frame": {
+    "x": 1504,
+    "y": 454,
+    "w": 208,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 208,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 208,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_a",
+   "state": "destroyed",
+   "partId": "seg_a"
+  },
+  "seg_a_destroyed_4": {
+   "frame": {
+    "x": 1714,
+    "y": 454,
+    "w": 208,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 208,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 208,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_a",
+   "state": "destroyed",
+   "partId": "seg_a"
+  },
+  "seg_a_destroyed_5": {
+   "frame": {
+    "x": 2,
+    "y": 680,
+    "w": 208,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 208,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 208,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_a",
+   "state": "destroyed",
+   "partId": "seg_a"
+  },
+  "seg_a_idle_0": {
+   "frame": {
+    "x": 212,
+    "y": 680,
+    "w": 208,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 208,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 208,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_a",
+   "state": "idle",
+   "partId": "seg_a"
+  },
+  "seg_a_idle_1": {
+   "frame": {
+    "x": 422,
+    "y": 680,
+    "w": 208,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 208,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 208,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_a",
+   "state": "idle",
+   "partId": "seg_a"
+  },
+  "seg_a_idle_2": {
+   "frame": {
+    "x": 632,
+    "y": 680,
+    "w": 208,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 208,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 208,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_a",
+   "state": "idle",
+   "partId": "seg_a"
+  },
+  "seg_a_idle_3": {
+   "frame": {
+    "x": 842,
+    "y": 680,
+    "w": 208,
+    "h": 176
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 208,
+    "h": 176
+   },
+   "sourceSize": {
+    "w": 208,
+    "h": 176
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_a",
+   "state": "idle",
+   "partId": "seg_a"
+  },
+  "seg_b_damaged_0": {
+   "frame": {
+    "x": 714,
+    "y": 1036,
+    "w": 200,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 172
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_b",
+   "state": "damaged",
+   "partId": "seg_b"
+  },
+  "seg_b_damaged_1": {
+   "frame": {
+    "x": 916,
+    "y": 1036,
+    "w": 200,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 172
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_b",
+   "state": "damaged",
+   "partId": "seg_b"
+  },
+  "seg_b_destroyed_0": {
+   "frame": {
+    "x": 1118,
+    "y": 1036,
+    "w": 200,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 172
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_b",
+   "state": "destroyed",
+   "partId": "seg_b"
+  },
+  "seg_b_destroyed_1": {
+   "frame": {
+    "x": 1320,
+    "y": 1036,
+    "w": 200,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 172
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_b",
+   "state": "destroyed",
+   "partId": "seg_b"
+  },
+  "seg_b_destroyed_2": {
+   "frame": {
+    "x": 1522,
+    "y": 1036,
+    "w": 200,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 172
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_b",
+   "state": "destroyed",
+   "partId": "seg_b"
+  },
+  "seg_b_destroyed_3": {
+   "frame": {
+    "x": 1724,
+    "y": 1036,
+    "w": 200,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 172
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_b",
+   "state": "destroyed",
+   "partId": "seg_b"
+  },
+  "seg_b_destroyed_4": {
+   "frame": {
+    "x": 2,
+    "y": 1214,
+    "w": 200,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 172
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_b",
+   "state": "destroyed",
+   "partId": "seg_b"
+  },
+  "seg_b_destroyed_5": {
+   "frame": {
+    "x": 204,
+    "y": 1214,
+    "w": 200,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 172
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_b",
+   "state": "destroyed",
+   "partId": "seg_b"
+  },
+  "seg_b_idle_0": {
+   "frame": {
+    "x": 406,
+    "y": 1214,
+    "w": 200,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 172
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_b",
+   "state": "idle",
+   "partId": "seg_b"
+  },
+  "seg_b_idle_1": {
+   "frame": {
+    "x": 608,
+    "y": 1214,
+    "w": 200,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 172
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_b",
+   "state": "idle",
+   "partId": "seg_b"
+  },
+  "seg_b_idle_2": {
+   "frame": {
+    "x": 810,
+    "y": 1214,
+    "w": 200,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 172
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_b",
+   "state": "idle",
+   "partId": "seg_b"
+  },
+  "seg_b_idle_3": {
+   "frame": {
+    "x": 1012,
+    "y": 1214,
+    "w": 200,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 172
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_b",
+   "state": "idle",
+   "partId": "seg_b"
+  },
+  "seg_c_damaged_0": {
+   "frame": {
+    "x": 1214,
+    "y": 1214,
+    "w": 192,
+    "h": 168
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 168
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 168
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_c",
+   "state": "damaged",
+   "partId": "seg_c"
+  },
+  "seg_c_damaged_1": {
+   "frame": {
+    "x": 1408,
+    "y": 1214,
+    "w": 192,
+    "h": 168
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 168
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 168
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_c",
+   "state": "damaged",
+   "partId": "seg_c"
+  },
+  "seg_c_destroyed_0": {
+   "frame": {
+    "x": 1602,
+    "y": 1214,
+    "w": 192,
+    "h": 168
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 168
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 168
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_c",
+   "state": "destroyed",
+   "partId": "seg_c"
+  },
+  "seg_c_destroyed_1": {
+   "frame": {
+    "x": 1796,
+    "y": 1214,
+    "w": 192,
+    "h": 168
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 168
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 168
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_c",
+   "state": "destroyed",
+   "partId": "seg_c"
+  },
+  "seg_c_destroyed_2": {
+   "frame": {
+    "x": 2,
+    "y": 1388,
+    "w": 192,
+    "h": 168
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 168
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 168
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_c",
+   "state": "destroyed",
+   "partId": "seg_c"
+  },
+  "seg_c_destroyed_3": {
+   "frame": {
+    "x": 196,
+    "y": 1388,
+    "w": 192,
+    "h": 168
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 168
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 168
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_c",
+   "state": "destroyed",
+   "partId": "seg_c"
+  },
+  "seg_c_destroyed_4": {
+   "frame": {
+    "x": 390,
+    "y": 1388,
+    "w": 192,
+    "h": 168
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 168
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 168
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_c",
+   "state": "destroyed",
+   "partId": "seg_c"
+  },
+  "seg_c_destroyed_5": {
+   "frame": {
+    "x": 584,
+    "y": 1388,
+    "w": 192,
+    "h": 168
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 168
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 168
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_c",
+   "state": "destroyed",
+   "partId": "seg_c"
+  },
+  "seg_c_idle_0": {
+   "frame": {
+    "x": 778,
+    "y": 1388,
+    "w": 192,
+    "h": 168
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 168
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 168
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_c",
+   "state": "idle",
+   "partId": "seg_c"
+  },
+  "seg_c_idle_1": {
+   "frame": {
+    "x": 972,
+    "y": 1388,
+    "w": 192,
+    "h": 168
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 168
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 168
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_c",
+   "state": "idle",
+   "partId": "seg_c"
+  },
+  "seg_c_idle_2": {
+   "frame": {
+    "x": 1166,
+    "y": 1388,
+    "w": 192,
+    "h": 168
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 168
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 168
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_c",
+   "state": "idle",
+   "partId": "seg_c"
+  },
+  "seg_c_idle_3": {
+   "frame": {
+    "x": 1360,
+    "y": 1388,
+    "w": 192,
+    "h": 168
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 168
+   },
+   "sourceSize": {
+    "w": 192,
+    "h": 168
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_c",
+   "state": "idle",
+   "partId": "seg_c"
+  },
+  "seg_d_damaged_0": {
+   "frame": {
+    "x": 1554,
+    "y": 1388,
+    "w": 184,
+    "h": 164
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 164
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 164
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_d",
+   "state": "damaged",
+   "partId": "seg_d"
+  },
+  "seg_d_damaged_1": {
+   "frame": {
+    "x": 1740,
+    "y": 1388,
+    "w": 184,
+    "h": 164
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 164
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 164
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_d",
+   "state": "damaged",
+   "partId": "seg_d"
+  },
+  "seg_d_destroyed_0": {
+   "frame": {
+    "x": 2,
+    "y": 1558,
+    "w": 184,
+    "h": 164
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 164
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 164
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_d",
+   "state": "destroyed",
+   "partId": "seg_d"
+  },
+  "seg_d_destroyed_1": {
+   "frame": {
+    "x": 188,
+    "y": 1558,
+    "w": 184,
+    "h": 164
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 164
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 164
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_d",
+   "state": "destroyed",
+   "partId": "seg_d"
+  },
+  "seg_d_destroyed_2": {
+   "frame": {
+    "x": 374,
+    "y": 1558,
+    "w": 184,
+    "h": 164
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 164
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 164
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_d",
+   "state": "destroyed",
+   "partId": "seg_d"
+  },
+  "seg_d_destroyed_3": {
+   "frame": {
+    "x": 560,
+    "y": 1558,
+    "w": 184,
+    "h": 164
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 164
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 164
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_d",
+   "state": "destroyed",
+   "partId": "seg_d"
+  },
+  "seg_d_destroyed_4": {
+   "frame": {
+    "x": 746,
+    "y": 1558,
+    "w": 184,
+    "h": 164
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 164
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 164
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_d",
+   "state": "destroyed",
+   "partId": "seg_d"
+  },
+  "seg_d_destroyed_5": {
+   "frame": {
+    "x": 932,
+    "y": 1558,
+    "w": 184,
+    "h": 164
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 164
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 164
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_d",
+   "state": "destroyed",
+   "partId": "seg_d"
+  },
+  "seg_d_idle_0": {
+   "frame": {
+    "x": 1118,
+    "y": 1558,
+    "w": 184,
+    "h": 164
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 164
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 164
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_d",
+   "state": "idle",
+   "partId": "seg_d"
+  },
+  "seg_d_idle_1": {
+   "frame": {
+    "x": 1304,
+    "y": 1558,
+    "w": 184,
+    "h": 164
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 164
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 164
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_d",
+   "state": "idle",
+   "partId": "seg_d"
+  },
+  "seg_d_idle_2": {
+   "frame": {
+    "x": 1490,
+    "y": 1558,
+    "w": 184,
+    "h": 164
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 164
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 164
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_d",
+   "state": "idle",
+   "partId": "seg_d"
+  },
+  "seg_d_idle_3": {
+   "frame": {
+    "x": 1676,
+    "y": 1558,
+    "w": 184,
+    "h": 164
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 164
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 164
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "seg_d",
+   "state": "idle",
+   "partId": "seg_d"
+  },
+  "thruster_l_charge_0": {
+   "frame": {
+    "x": 1862,
+    "y": 1558,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "charge",
+   "partId": "thruster_l"
+  },
+  "thruster_l_charge_1": {
+   "frame": {
+    "x": 2,
+    "y": 1724,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "charge",
+   "partId": "thruster_l"
+  },
+  "thruster_l_charge_2": {
+   "frame": {
+    "x": 164,
+    "y": 1724,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "charge",
+   "partId": "thruster_l"
+  },
+  "thruster_l_charge_3": {
+   "frame": {
+    "x": 326,
+    "y": 1724,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "charge",
+   "partId": "thruster_l"
+  },
+  "thruster_l_charge_4": {
+   "frame": {
+    "x": 488,
+    "y": 1724,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "charge",
+   "partId": "thruster_l"
+  },
+  "thruster_l_charge_5": {
+   "frame": {
+    "x": 650,
+    "y": 1724,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "charge",
+   "partId": "thruster_l"
+  },
+  "thruster_l_damaged_0": {
+   "frame": {
+    "x": 812,
+    "y": 1724,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "damaged",
+   "partId": "thruster_l"
+  },
+  "thruster_l_damaged_1": {
+   "frame": {
+    "x": 974,
+    "y": 1724,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "damaged",
+   "partId": "thruster_l"
+  },
+  "thruster_l_destroyed_0": {
+   "frame": {
+    "x": 1136,
+    "y": 1724,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "destroyed",
+   "partId": "thruster_l"
+  },
+  "thruster_l_destroyed_1": {
+   "frame": {
+    "x": 1298,
+    "y": 1724,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "destroyed",
+   "partId": "thruster_l"
+  },
+  "thruster_l_destroyed_2": {
+   "frame": {
+    "x": 1460,
+    "y": 1724,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "destroyed",
+   "partId": "thruster_l"
+  },
+  "thruster_l_destroyed_3": {
+   "frame": {
+    "x": 1622,
+    "y": 1724,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "destroyed",
+   "partId": "thruster_l"
+  },
+  "thruster_l_destroyed_4": {
+   "frame": {
+    "x": 1784,
+    "y": 1724,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "destroyed",
+   "partId": "thruster_l"
+  },
+  "thruster_l_destroyed_5": {
+   "frame": {
+    "x": 2,
+    "y": 1886,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "destroyed",
+   "partId": "thruster_l"
+  },
+  "thruster_l_fire_0": {
+   "frame": {
+    "x": 164,
+    "y": 1886,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "fire",
+   "partId": "thruster_l"
+  },
+  "thruster_l_fire_1": {
+   "frame": {
+    "x": 326,
+    "y": 1886,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "fire",
+   "partId": "thruster_l"
+  },
+  "thruster_l_idle_0": {
+   "frame": {
+    "x": 488,
+    "y": 1886,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "idle",
+   "partId": "thruster_l"
+  },
+  "thruster_l_idle_1": {
+   "frame": {
+    "x": 650,
+    "y": 1886,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "idle",
+   "partId": "thruster_l"
+  },
+  "thruster_l_idle_2": {
+   "frame": {
+    "x": 812,
+    "y": 1886,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "idle",
+   "partId": "thruster_l"
+  },
+  "thruster_l_idle_3": {
+   "frame": {
+    "x": 974,
+    "y": 1886,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_l",
+   "state": "idle",
+   "partId": "thruster_l"
+  },
+  "thruster_r_charge_0": {
+   "frame": {
+    "x": 1136,
+    "y": 1886,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "charge",
+   "partId": "thruster_r"
+  },
+  "thruster_r_charge_1": {
+   "frame": {
+    "x": 1298,
+    "y": 1886,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "charge",
+   "partId": "thruster_r"
+  },
+  "thruster_r_charge_2": {
+   "frame": {
+    "x": 1460,
+    "y": 1886,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "charge",
+   "partId": "thruster_r"
+  },
+  "thruster_r_charge_3": {
+   "frame": {
+    "x": 1622,
+    "y": 1886,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "charge",
+   "partId": "thruster_r"
+  },
+  "thruster_r_charge_4": {
+   "frame": {
+    "x": 1784,
+    "y": 1886,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "charge",
+   "partId": "thruster_r"
+  },
+  "thruster_r_charge_5": {
+   "frame": {
+    "x": 2,
+    "y": 2048,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "charge",
+   "partId": "thruster_r"
+  },
+  "thruster_r_damaged_0": {
+   "frame": {
+    "x": 164,
+    "y": 2048,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "damaged",
+   "partId": "thruster_r"
+  },
+  "thruster_r_damaged_1": {
+   "frame": {
+    "x": 326,
+    "y": 2048,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "damaged",
+   "partId": "thruster_r"
+  },
+  "thruster_r_destroyed_0": {
+   "frame": {
+    "x": 488,
+    "y": 2048,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "destroyed",
+   "partId": "thruster_r"
+  },
+  "thruster_r_destroyed_1": {
+   "frame": {
+    "x": 650,
+    "y": 2048,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "destroyed",
+   "partId": "thruster_r"
+  },
+  "thruster_r_destroyed_2": {
+   "frame": {
+    "x": 812,
+    "y": 2048,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "destroyed",
+   "partId": "thruster_r"
+  },
+  "thruster_r_destroyed_3": {
+   "frame": {
+    "x": 974,
+    "y": 2048,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "destroyed",
+   "partId": "thruster_r"
+  },
+  "thruster_r_destroyed_4": {
+   "frame": {
+    "x": 1136,
+    "y": 2048,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "destroyed",
+   "partId": "thruster_r"
+  },
+  "thruster_r_destroyed_5": {
+   "frame": {
+    "x": 1298,
+    "y": 2048,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "destroyed",
+   "partId": "thruster_r"
+  },
+  "thruster_r_fire_0": {
+   "frame": {
+    "x": 1460,
+    "y": 2048,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "fire",
+   "partId": "thruster_r"
+  },
+  "thruster_r_fire_1": {
+   "frame": {
+    "x": 1622,
+    "y": 2048,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "fire",
+   "partId": "thruster_r"
+  },
+  "thruster_r_idle_0": {
+   "frame": {
+    "x": 1784,
+    "y": 2048,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "idle",
+   "partId": "thruster_r"
+  },
+  "thruster_r_idle_1": {
+   "frame": {
+    "x": 2,
+    "y": 2210,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "idle",
+   "partId": "thruster_r"
+  },
+  "thruster_r_idle_2": {
+   "frame": {
+    "x": 164,
+    "y": 2210,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "idle",
+   "partId": "thruster_r"
+  },
+  "thruster_r_idle_3": {
+   "frame": {
+    "x": 326,
+    "y": 2210,
+    "w": 160,
+    "h": 160
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160
+   },
+   "sourceSize": {
+    "w": 160,
+    "h": 160
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "thruster_r",
+   "state": "idle",
+   "partId": "thruster_r"
+  },
+  "turret_a_charge_0": {
+   "frame": {
+    "x": 488,
+    "y": 2210,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "charge",
+   "partId": "turret_a"
+  },
+  "turret_a_charge_1": {
+   "frame": {
+    "x": 618,
+    "y": 2210,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "charge",
+   "partId": "turret_a"
+  },
+  "turret_a_charge_2": {
+   "frame": {
+    "x": 748,
+    "y": 2210,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "charge",
+   "partId": "turret_a"
+  },
+  "turret_a_charge_3": {
+   "frame": {
+    "x": 878,
+    "y": 2210,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "charge",
+   "partId": "turret_a"
+  },
+  "turret_a_charge_4": {
+   "frame": {
+    "x": 1008,
+    "y": 2210,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "charge",
+   "partId": "turret_a"
+  },
+  "turret_a_charge_5": {
+   "frame": {
+    "x": 1138,
+    "y": 2210,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "charge",
+   "partId": "turret_a"
+  },
+  "turret_a_damaged_0": {
+   "frame": {
+    "x": 1268,
+    "y": 2210,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "damaged",
+   "partId": "turret_a"
+  },
+  "turret_a_damaged_1": {
+   "frame": {
+    "x": 1398,
+    "y": 2210,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "damaged",
+   "partId": "turret_a"
+  },
+  "turret_a_destroyed_0": {
+   "frame": {
+    "x": 1528,
+    "y": 2210,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "destroyed",
+   "partId": "turret_a"
+  },
+  "turret_a_destroyed_1": {
+   "frame": {
+    "x": 1658,
+    "y": 2210,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "destroyed",
+   "partId": "turret_a"
+  },
+  "turret_a_destroyed_2": {
+   "frame": {
+    "x": 1788,
+    "y": 2210,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "destroyed",
+   "partId": "turret_a"
+  },
+  "turret_a_destroyed_3": {
+   "frame": {
+    "x": 1918,
+    "y": 2210,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "destroyed",
+   "partId": "turret_a"
+  },
+  "turret_a_destroyed_4": {
+   "frame": {
+    "x": 2,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "destroyed",
+   "partId": "turret_a"
+  },
+  "turret_a_destroyed_5": {
+   "frame": {
+    "x": 132,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "destroyed",
+   "partId": "turret_a"
+  },
+  "turret_a_fire_0": {
+   "frame": {
+    "x": 262,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "fire",
+   "partId": "turret_a"
+  },
+  "turret_a_fire_1": {
+   "frame": {
+    "x": 392,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "fire",
+   "partId": "turret_a"
+  },
+  "turret_a_idle_0": {
+   "frame": {
+    "x": 522,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "idle",
+   "partId": "turret_a"
+  },
+  "turret_a_idle_1": {
+   "frame": {
+    "x": 652,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "idle",
+   "partId": "turret_a"
+  },
+  "turret_a_idle_2": {
+   "frame": {
+    "x": 782,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "idle",
+   "partId": "turret_a"
+  },
+  "turret_a_idle_3": {
+   "frame": {
+    "x": 912,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_a",
+   "state": "idle",
+   "partId": "turret_a"
+  },
+  "turret_b_charge_0": {
+   "frame": {
+    "x": 1042,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "charge",
+   "partId": "turret_b"
+  },
+  "turret_b_charge_1": {
+   "frame": {
+    "x": 1172,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "charge",
+   "partId": "turret_b"
+  },
+  "turret_b_charge_2": {
+   "frame": {
+    "x": 1302,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "charge",
+   "partId": "turret_b"
+  },
+  "turret_b_charge_3": {
+   "frame": {
+    "x": 1432,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "charge",
+   "partId": "turret_b"
+  },
+  "turret_b_charge_4": {
+   "frame": {
+    "x": 1562,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "charge",
+   "partId": "turret_b"
+  },
+  "turret_b_charge_5": {
+   "frame": {
+    "x": 1692,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "charge",
+   "partId": "turret_b"
+  },
+  "turret_b_damaged_0": {
+   "frame": {
+    "x": 1822,
+    "y": 2372,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "damaged",
+   "partId": "turret_b"
+  },
+  "turret_b_damaged_1": {
+   "frame": {
+    "x": 2,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "damaged",
+   "partId": "turret_b"
+  },
+  "turret_b_destroyed_0": {
+   "frame": {
+    "x": 132,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "destroyed",
+   "partId": "turret_b"
+  },
+  "turret_b_destroyed_1": {
+   "frame": {
+    "x": 262,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "destroyed",
+   "partId": "turret_b"
+  },
+  "turret_b_destroyed_2": {
+   "frame": {
+    "x": 392,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "destroyed",
+   "partId": "turret_b"
+  },
+  "turret_b_destroyed_3": {
+   "frame": {
+    "x": 522,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "destroyed",
+   "partId": "turret_b"
+  },
+  "turret_b_destroyed_4": {
+   "frame": {
+    "x": 652,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "destroyed",
+   "partId": "turret_b"
+  },
+  "turret_b_destroyed_5": {
+   "frame": {
+    "x": 782,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "destroyed",
+   "partId": "turret_b"
+  },
+  "turret_b_fire_0": {
+   "frame": {
+    "x": 912,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "fire",
+   "partId": "turret_b"
+  },
+  "turret_b_fire_1": {
+   "frame": {
+    "x": 1042,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "fire",
+   "partId": "turret_b"
+  },
+  "turret_b_idle_0": {
+   "frame": {
+    "x": 1172,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "idle",
+   "partId": "turret_b"
+  },
+  "turret_b_idle_1": {
+   "frame": {
+    "x": 1302,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "idle",
+   "partId": "turret_b"
+  },
+  "turret_b_idle_2": {
+   "frame": {
+    "x": 1432,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "idle",
+   "partId": "turret_b"
+  },
+  "turret_b_idle_3": {
+   "frame": {
+    "x": 1562,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_b",
+   "state": "idle",
+   "partId": "turret_b"
+  },
+  "turret_c_charge_0": {
+   "frame": {
+    "x": 1692,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "charge",
+   "partId": "turret_c"
+  },
+  "turret_c_charge_1": {
+   "frame": {
+    "x": 1822,
+    "y": 2502,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "charge",
+   "partId": "turret_c"
+  },
+  "turret_c_charge_2": {
+   "frame": {
+    "x": 2,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "charge",
+   "partId": "turret_c"
+  },
+  "turret_c_charge_3": {
+   "frame": {
+    "x": 132,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "charge",
+   "partId": "turret_c"
+  },
+  "turret_c_charge_4": {
+   "frame": {
+    "x": 262,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "charge",
+   "partId": "turret_c"
+  },
+  "turret_c_charge_5": {
+   "frame": {
+    "x": 392,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "charge",
+   "partId": "turret_c"
+  },
+  "turret_c_damaged_0": {
+   "frame": {
+    "x": 522,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "damaged",
+   "partId": "turret_c"
+  },
+  "turret_c_damaged_1": {
+   "frame": {
+    "x": 652,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "damaged",
+   "partId": "turret_c"
+  },
+  "turret_c_destroyed_0": {
+   "frame": {
+    "x": 782,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "destroyed",
+   "partId": "turret_c"
+  },
+  "turret_c_destroyed_1": {
+   "frame": {
+    "x": 912,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "destroyed",
+   "partId": "turret_c"
+  },
+  "turret_c_destroyed_2": {
+   "frame": {
+    "x": 1042,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "destroyed",
+   "partId": "turret_c"
+  },
+  "turret_c_destroyed_3": {
+   "frame": {
+    "x": 1172,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "destroyed",
+   "partId": "turret_c"
+  },
+  "turret_c_destroyed_4": {
+   "frame": {
+    "x": 1302,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "destroyed",
+   "partId": "turret_c"
+  },
+  "turret_c_destroyed_5": {
+   "frame": {
+    "x": 1432,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "destroyed",
+   "partId": "turret_c"
+  },
+  "turret_c_fire_0": {
+   "frame": {
+    "x": 1562,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "fire",
+   "partId": "turret_c"
+  },
+  "turret_c_fire_1": {
+   "frame": {
+    "x": 1692,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "fire",
+   "partId": "turret_c"
+  },
+  "turret_c_idle_0": {
+   "frame": {
+    "x": 1822,
+    "y": 2632,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "idle",
+   "partId": "turret_c"
+  },
+  "turret_c_idle_1": {
+   "frame": {
+    "x": 2,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "idle",
+   "partId": "turret_c"
+  },
+  "turret_c_idle_2": {
+   "frame": {
+    "x": 132,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "idle",
+   "partId": "turret_c"
+  },
+  "turret_c_idle_3": {
+   "frame": {
+    "x": 262,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_c",
+   "state": "idle",
+   "partId": "turret_c"
+  },
+  "turret_d_charge_0": {
+   "frame": {
+    "x": 392,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "charge",
+   "partId": "turret_d"
+  },
+  "turret_d_charge_1": {
+   "frame": {
+    "x": 522,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "charge",
+   "partId": "turret_d"
+  },
+  "turret_d_charge_2": {
+   "frame": {
+    "x": 652,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "charge",
+   "partId": "turret_d"
+  },
+  "turret_d_charge_3": {
+   "frame": {
+    "x": 782,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "charge",
+   "partId": "turret_d"
+  },
+  "turret_d_charge_4": {
+   "frame": {
+    "x": 912,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "charge",
+   "partId": "turret_d"
+  },
+  "turret_d_charge_5": {
+   "frame": {
+    "x": 1042,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "charge",
+   "partId": "turret_d"
+  },
+  "turret_d_damaged_0": {
+   "frame": {
+    "x": 1172,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "damaged",
+   "partId": "turret_d"
+  },
+  "turret_d_damaged_1": {
+   "frame": {
+    "x": 1302,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "damaged",
+   "partId": "turret_d"
+  },
+  "turret_d_destroyed_0": {
+   "frame": {
+    "x": 1432,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "destroyed",
+   "partId": "turret_d"
+  },
+  "turret_d_destroyed_1": {
+   "frame": {
+    "x": 1562,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "destroyed",
+   "partId": "turret_d"
+  },
+  "turret_d_destroyed_2": {
+   "frame": {
+    "x": 1692,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "destroyed",
+   "partId": "turret_d"
+  },
+  "turret_d_destroyed_3": {
+   "frame": {
+    "x": 1822,
+    "y": 2762,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "destroyed",
+   "partId": "turret_d"
+  },
+  "turret_d_destroyed_4": {
+   "frame": {
+    "x": 2,
+    "y": 2892,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "destroyed",
+   "partId": "turret_d"
+  },
+  "turret_d_destroyed_5": {
+   "frame": {
+    "x": 132,
+    "y": 2892,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "destroyed",
+   "partId": "turret_d"
+  },
+  "turret_d_fire_0": {
+   "frame": {
+    "x": 262,
+    "y": 2892,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "fire",
+   "partId": "turret_d"
+  },
+  "turret_d_fire_1": {
+   "frame": {
+    "x": 392,
+    "y": 2892,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "fire",
+   "partId": "turret_d"
+  },
+  "turret_d_idle_0": {
+   "frame": {
+    "x": 522,
+    "y": 2892,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "idle",
+   "partId": "turret_d"
+  },
+  "turret_d_idle_1": {
+   "frame": {
+    "x": 652,
+    "y": 2892,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "idle",
+   "partId": "turret_d"
+  },
+  "turret_d_idle_2": {
+   "frame": {
+    "x": 782,
+    "y": 2892,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "idle",
+   "partId": "turret_d"
+  },
+  "turret_d_idle_3": {
+   "frame": {
+    "x": 912,
+    "y": 2892,
+    "w": 128,
+    "h": 128
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 128
+   },
+   "sourceSize": {
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "entity": "turret_d",
+   "state": "idle",
+   "partId": "turret_d"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+# The sprite pipeline promises byte-identical output across machines, and it
+# writes LF explicitly. Checking files out as CRLF on Windows would break that.
+* text=auto eol=lf
+
+# Generated binaries - never touch them.
+*.png binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ogg binary

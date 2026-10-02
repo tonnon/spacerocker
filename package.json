@@ -1,0 +1,49 @@
+{
+  "name": "spacerocker",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Spacerocker - vertical electropunk shoot 'em up",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "sprites": "python -m spritegen.build",
+    "sprites:act1": "python -m spritegen.build --act 1",
+    "sprites:act2": "python -m spritegen.build --act 2",
+    "sprites:act3": "python -m spritegen.build --act 3",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "typecheck": "tsc -b",
+    "playtest": "tsx --tsconfig tsconfig.app.json scripts/playtest.ts",
+    "icons": "python -m spritegen.build --only-icons"
+  },
+  "dependencies": {
+    "@fontsource/archivo-black": "^5.1.0",
+    "@fontsource/chakra-petch": "^5.1.0",
+    "@react-three/fiber": "^9.0.0",
+    "miniplex": "^2.0.0",
+    "postprocessing": "^6.36.0",
+    "react": "~19.2.8",
+    "react-dom": "~19.2.8",
+    "three": "^0.186.0",
+    "tone": "^15.0.4",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.0",
+    "@types/node": "^26.6.2",
+    "@types/react": "~19.2.0",
+    "@types/react-dom": "~19.2.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "playwright": "^1.63.0",
+    "pngjs": "^7.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  }
+}
